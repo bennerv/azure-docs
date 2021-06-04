@@ -66,7 +66,7 @@ Certain configurations for Azure Red Hat OpenShift 4 clusters can affect your cl
 * Don't modify the DNS configuration of the cluster's virtual network. The default Azure DNS resolver must be used.
 * The Azure Red Hat OpenShift service accesses your cluster via Private Link Service.  Don't remove or modify service access.
 * Non-RHCOS compute nodes aren't supported. For example, you can't use a RHEL compute node.
-* Don't place policies within your subscription that prevents SREs from performing normal maintenance against the ARO cluster.
+* Don't place policies within your subscription or management group that prevent SREs from performing normal maintenance against the ARO cluster, such as requiring tags on the ARO RP-managed cluster resource group.
 
 ## Supported virtual machine sizes
 
